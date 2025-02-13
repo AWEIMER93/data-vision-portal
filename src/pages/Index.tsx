@@ -2,6 +2,7 @@
 import { Header } from "@/components/Header";
 import { DateSection } from "@/components/DateSection";
 import { FinancialStats } from "@/components/FinancialStats";
+import { RecentTransactions } from "@/components/RecentTransactions";
 
 const Index = () => {
   return (
@@ -9,6 +10,7 @@ const Index = () => {
       <Header />
       <DateSection />
       <FinancialStats />
+      <RecentTransactions />
     </div>
   );
 };
