@@ -5,7 +5,7 @@ import { FinancialStats } from "@/components/FinancialStats";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gradient-to-br from-primary-light via-white to-secondary pb-6">
       <Header />
       <DateSection />
       <FinancialStats />

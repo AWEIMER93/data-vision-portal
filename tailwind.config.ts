@@ -26,17 +26,18 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
+          DEFAULT: "#9b87f5",
+          light: "#E5DEFF",
+          dark: "#7E69AB",
         },
         secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
+          DEFAULT: "#F2FCE2",
+          foreground: "#6E59A5",
         },
         accent: {
-          DEFAULT: "#E97458",
-          light: "#F4C7BC",
-          dark: "#D45B3F",
+          DEFAULT: "#8B5CF6",
+          light: "#D6BCFA",
+          dark: "#7E69AB",
         },
         card: {
           DEFAULT: "hsl(var(--card))",
@@ -49,13 +50,18 @@ export default {
           "100%": { transform: "translateX(0)" },
         },
         "fade-in": {
-          "0%": { opacity: "0" },
-          "100%": { opacity: "1" },
+          "0%": { opacity: "0", transform: "translateY(10px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        "scale-in": {
+          "0%": { transform: "scale(0.95)", opacity: "0" },
+          "100%": { transform: "scale(1)", opacity: "1" },
         },
       },
       animation: {
         "slide-in": "slide-in 0.5s ease-out",
         "fade-in": "fade-in 0.5s ease-out",
+        "scale-in": "scale-in 0.3s ease-out",
       },
     },
   },

@@ -32,15 +32,15 @@
   }
 
   body {
-    @apply bg-background text-foreground antialiased;
+    @apply bg-gradient-to-br from-primary-light via-white to-secondary text-foreground antialiased;
   }
 
   .glass {
-    @apply bg-white/70 backdrop-blur-lg border border-white/20 rounded-2xl;
+    @apply bg-white/70 backdrop-blur-lg border border-white/20 rounded-2xl shadow-xl;
   }
 
   .card-hover {
-    @apply transition-all duration-300 hover:shadow-lg hover:scale-[1.02];
+    @apply transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:scale-[1.02];
   }
 }
 
